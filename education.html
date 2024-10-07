@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Educational Qualification</title>
+    <style>
+        .center-content {
+            text-align: center;
+        }
+        .skills-table {
+            width: 50%;
+            margin: 0 auto;
+        }
+        .skills-table td {
+            padding: 5px;
+        }
+        .skill-bar {
+            background-color: #f0f0f0;
+            height: 20px;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .skill-level {
+            height: 100%;
+            border-radius: 10px;
+            background-color: #3d983d;
+            transition: width 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header><br>
+    <div class="center-content">
+        <p style="color: #3d983d;font-size: large;">Download my Curriculum Vitae by a single click!</p><br>
+        <a href="CV.pdf" download="CV.pdf">
+            <button style="padding: 10px 20px; background-color: #7a937a; color:black; border: none; cursor: pointer;">Download CV</button>
+        </a>
+    </div><br><br>
+    <h2 style="color: #3d983d;text-align: center;" > Educational Qualification and Skills </h2><br>
+    <table>
+        <tr>
+            <th>Qualification</th>
+            <th>Year of Passing</th>
+            <th>Name of the Institution</th>
+            <th>Board/University</th>
+            <th>Percentage/CGPA</th>
+        </tr>
+        <tr>
+            <td>Undergraduate</td>
+            <td>June 2026</td>
+            <td>Kumaraguru College of Technology</td>
+            <td>Anna University</td>
+            <td>9.0</td>
+        </tr>
+        <tr>
+            <td>XII</td>
+            <td>March 2022</td>
+            <td>Bannari Amman Vidya Niketan Matriculation Higher Secondary School</td>
+            <td>State Board</td>
+            <td>97.6%</td>
+        </tr>
+        <tr>
+            <td>X</td>
+            <td>April 2020</td>
+            <td>Bannari Amman Vidya Niketan Matriculation Higher Secondary School</td>
+            <td>State Board</td>
+            <td>98.6%</td>
+        </tr>
+    </table><br><br>
+    <table class="skills-table">
+        <tr>
+            <th>Skills</th>
+            <th>Proficiency</th>
+        </tr>
+        <tr>
+            <td>Web Development</td>
+            <td>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Data Structures</td>
+            <td>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 70%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Object-Oriented Programming (OOP)</td>
+            <td>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Database Management</td>
+            <td>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%;"></div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>Operating Systems</td>
+            <td>
+                <div class="skill-bar">
+                    <div class="skill-level" style="width: 65%;"></div>
+                </div>
+            </td>
+        </tr>
+    </table><br>
+</body>
+</html>

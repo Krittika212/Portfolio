@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            let count = localStorage.getItem('visitorsCount');
+            count = count ? parseInt(count) + 1 : 1; // Increment the count
+            localStorage.setItem('visitorsCount', count); // Update the count in local storage
+        
+            document.getElementById('visitorsCount').textContent = count;
+        });
+    </script>
+    <style>
+        #visitorsCount {
+            position: absolute;
+            top: 15px;
+            right: 35px;
+            font-size: 18px;
+            color: #fff;
+        }
+        #visitorsLabel {
+            position: absolute;
+            top: 15px;
+            right: calc(10px + 70px); /* Adjusted for label width */
+            font-size: 18px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="education.html">Education</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Display visitors count at the top right corner -->
+    <span id="visitorsCount">0</span>
+    <span id="visitorsLabel">Total Visitors:</span>
+    <section class="index-content" style="background-color: #080808;">
+        <div class="content-wrapper">
+            <div class="text-content">
+                <p>Hi There!</p>
+                <h1>I'm <span style="color:#3d983d;">Krittika </span></h1><br>
+                <p> <i>Tech enthusiast</i> </p><br><br>
+                
+            </div>
+            <div class="image-content">
+                <img src="index.jpg" alt="Your Image">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

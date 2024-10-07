@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Set body height to fill viewport */
+}
+header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo h1 {
+    margin: 0; /* Remove default margin */
+}
+.logo img {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Adjust spacing between logo and text */
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+.content {
+    padding: 30px;
+    height: 100%; /* Fill the remaining height */ /* Set background image */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the background image */
+}
+.content h1 span {
+    font-size: 50px; /* Increase font size */
+    margin: 0px 40px; /* Add margin to move the text down and right */
+    padding-top: 3%;
+}
+.shop-now-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:#333; /* Button background color */
+    color: #fff; /* Button text color */
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 5px; /* Rounded corners */
+    margin: 0px 40px;
+}
+.shop-now-btn:hover {
+    background-color: #0056b3; /* Button background color on hover */
+}
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+.dress-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.dress {
+    margin: 20px;
+    text-align: center;
+}
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.review {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color:  #f9f9f9;
+
+}
+.review h3 {
+    margin-top: 0;
+}
+.dress img {
+    width: 200px;
+    height: auto;
+}
